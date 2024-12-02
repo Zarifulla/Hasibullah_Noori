@@ -1,0 +1,570 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <div id="desktop"></div>
+    
+    <nav id="desktop-nav">
+      <div class="logo"><img src="./moon.png" alt="Dark/Light/Mode" id="icons"></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about" onclick="toggleMenu()">در باره من</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">تجربه کاری</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">خدمات ما</a></li>
+          <li><a href="#Gallery" onclick="toggleMenu()">گالری</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">تماس با ما</a></li>
+      </ul>
+      </div>
+    </nav>
+
+  
+        <!--Drop-Down Menu-->
+    <nav id="hamburger-nav">
+      <div class="logo"><img src="./moon.png" alt="Dark/Light/Mode" id="icon"></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">در باره من</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">تجربه کاری</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">خدمات ما</a></li>
+          <li><a href="#Gallery" onclick="toggleMenu()">گالری</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">تماس با ما</a></li>
+        </div>
+      </div>
+    </nav>
+
+
+    <!--First Section (Profile-Section)-->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./Noori-One_Withot_Layer.png" alt=" Hasibullah Noor profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">سلام، من</p>
+        <h1 class="title">حسیب الله نوری</h1>
+        <p class="section__text__p2" >فرانت اِند دیزاینر هستم</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('MY_CV.pdf')"
+          >
+          دانلود cv
+          </button>
+          <button class="btn btn-color-1"><a href="MoreContactPage.html" class="external_page">اطلاعات بیشتر</a>
+           
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./Facebook.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.facebook.com/hasibullah.noori.9887?mibextid=LQQJ4d'"
+          />
+          <img
+            src="./WhatsApp.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://Wa.me/+93703838231'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--Second Section (About-Section)-->
+    <section id="about">
+      <p class="section__text__p1">بیشتر بدانید</p>
+      <h1 class="title">در باره من</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./Noori-Two.JPG"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>تجربه کاری</h3>
+              <p class="experience-sub-title1" style="direction:rtl;">3+ سال<br>در بخش های مختلف کمپیوتر</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>تحصیلات</h3>
+              <p class="experience-sub-title1">محصل صنف چهارم<br> کمپیوتر در دانشگاه بغلان</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p class="text-container">
+              سلام ، من حسیب الله نوری هستم فرزند محترم نصرالله . متولد سال 1380 هـ . ش . سکونت اصلی بنده ولایت بغلان والسوالی فرنگ و سکونت فعلی
+                  همچنان ولایت بغلان شهر پلخمری میباشد. در سال 1398 مکتب را در لیسه نمبر2   شهر پلخمری به اتمام رسانیدیم. واین قابل ذکراست که بنده 
+                  نظر به علاقه ی که به علوم کمپیوتر داشتم بعد ازسپری نمودن امتحان کانکور به دانشگاه بغلان پوهنحٔی تعلیم و تربیه دیپارتمنت آموزش کمپیوتر راه 
+                  پیدا کردم که اکنون محصل بر حال صنف چهارم کمپیوتر میباشم. بر علاوه در جریان دروس مکتب و سال های محصلی دانشگاه کورس های زیادی 
+                  مانند: آموزشگاه ریاضیات، آموزشگاه علمی توانا،آموزشگاه هوشمند، سیستم پیشرفته  (AKES)
+                   ودیگر مراکز علمی را تعقیب نمودم. و در ضمن از چینل های موثر یوتیوب هم برای یادگیری رشته  کمپیوتر بعضی اوقات کمک میگیرم. 
+                   و ناگفته نباید گذاشت که پروژه های زیادی
+                    از بخش های دیتابیس و دیگر بخش ها به اتمام رسانیدیم و این هم یکی از پروژه های کوچک وب سایت میباشد.
+           </p>
+          </div>
+        </div>
+      </div>
+      <!--First-Arrow-Icon-Bello-->
+      <img
+        src="./arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+
+      <!--First-Arrow-Icon-Top-->
+      <div class="arrow-Right">
+       <img
+        src="./arrow_right.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#desktop'"
+      />
+    </div>
+      
+    
+    </section>
+    <!--Third Section (Experience-Section)-->
+    <section id="experience">
+      <p class="section__text__p1">بیشتر بدانید در مورد من</p>
+      <h1 class="title">تجربه کاری من</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">DIT</h2>
+            <div class="article-container">
+
+              <!--First-Article of Frontend-Develpment-->
+              <article>
+                <img
+                  src="./checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>اِچ تی ام ال</h3>
+                  <p class="experience-sub-title1">با تجربه</p>
+                </div>
+              </article>
+
+              <!--Second-Article of Frontend-Develpment-->
+              <article>
+                <img
+                  src="./checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>سی اس اس</h3>
+                  <p class="experience-sub-title1">با تجربه</p>
+                </div>
+              </article>
+
+              <!--Third-Article of Frontend-Develpment-->
+              <article>
+                <img
+                  src="./checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>جاوا اسکریپت</h3>
+                  <p class="experience-sub-title1">ابتدایی</p>
+                </div>
+              </article>
+
+              <!--Fourd-Article of Frontend-Develpment-->
+              <article>
+                <img
+                  src="./checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>سیستم دیتابیس</h3>
+                  <p class="experience-sub-title1">حد وسط</p>
+                </div>
+              </article>
+
+              <!--fived-Article of Frontend-Develpment-->
+              <article>
+                <img
+                  src="./checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>مای - اسکیول</h3>
+                  <p class="experience-sub-title1">متوسط</p>
+                </div>
+              </article>
+
+              <!--Sixed-Article of Frontend-Develpment-->
+              <article>
+                <img
+                  src="./checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>گرافیک دیزاین</h3>
+                  <p class="experience-sub-title1">ابتدایی</p>
+                </div>
+              </article>
+            </div>
+          </div>
+           <!--End-Article of Frontend-Develpment-->
+
+           <!--Backend Part-->
+          <div class="details-container">
+            <h2 class="experience-sub-title">ICDL</h2>
+            <div class="article-container">
+
+              <!--First-Article of Frontend-Develpment-->
+              <article>
+                <img
+                  src="./checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>سیستم عامل</h3>
+                  <p class="experience-sub-title1">اساسی</p>
+                </div>
+              </article>
+
+              <!--Second-Article of Frontend-Develpment-->
+              <article>
+                <img
+                  src="./checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>پروگرام ورد</h3>
+                  <p class="experience-sub-title1">اساسی</p>
+                </div>
+              </article>
+
+              <!--Third-Article of Frontend-Develpment-->
+              <article>
+                <img
+                  src="./checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>پروگرام اکسل</h3>
+                  <p class="experience-sub-title1">حد وسط</p>
+                </div>
+              </article>
+
+              <!--Fourd-Article of Frontend-Develpment-->
+              <article>
+                <img
+                  src="./checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>پروگرام پاورپوینت</h3>
+                  <p class="experience-sub-title1">با تجربه</p>
+                </div>
+              </article>
+
+              <!--Fived-Article of Frontend-Develpment-->
+              <article>
+                <img
+                  src="./checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>اکسس دیتابیس</h3>
+                  <p class="experience-sub-title1">اساسی</p>
+                </div>
+              </article>
+
+              <!--Sixed-Article of Frontend-Develpment-->
+              <article>
+                <img
+                  src="./checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>استفاده از انترنت</h3>
+                  <p class="experience-sub-title1">با تجربه</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End-Article of Backend-Develpment-->
+
+      <!--Second-Arrow-Icon-->
+      <img
+        src="./arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+
+      <!--Second-Arrow-Icon-Top-->
+      <div class="arrow-Right">
+        <img
+         src="./arrow_right.png"
+         alt="Arrow icon"
+         class="icon arrow"
+         onclick="location.href='#about'"
+       />
+     </div>
+
+    </section>
+
+    <!--Fourd Section (Project-Section)-->
+    <!--First-Project-->
+    <section id="projects">
+      <p class="section__text__p1">بیشتر بدانید در مورد</p>
+      <h1 class="title">خدمات ما</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">بخش اول</h2>
+            <div class="btn-container">
+
+              <!--first-button-->
+              <button class="btn btn-color-1 project-btn"><a href="MoreContactPage.html" class="external_page">اطلاعات بیشتر</a>
+
+              <!--Second-button-->
+              <button
+                class="btn btn-color-2  project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+               نمایش زنده
+              </button>
+            </div>
+          </div>
+
+          <!--Second-Project-->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">بخش دوم</h2>
+            <div class="btn-container">
+
+              <!--first-button-->
+              <button
+                class="btn btn-color-2 project-btn"
+               <button class="btn btn-color-1 project-btn"><a href="MoreContactPage.html" class="external_page">اطلاعات بیشتر</a>
+
+              <!--Second-button-->
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                نمایش زنده
+              </button>
+            </div>
+          </div>
+
+          <!--Third-Project-->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./H@N.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">بخش سوم</h2>
+            <div class="btn-container">
+
+              <!--first-button-->
+            <button class="btn btn-color-1 project-btn"><a href="MoreContactPage.html" class="external_page">اطلاعات بیشتر</a>
+
+              <!--Second-button-->
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                نمایش زنده
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Third-Arrow-Icon-Bello-->
+      <img
+        src="./arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+
+       <!--Third-Arrow-Icon-Top-->
+       <div class="arrow-Right">
+        <img
+         src="./arrow_right.png"
+         alt="Arrow icon"
+         class="icon arrow"
+         onclick="location.href='#experience'"
+       />
+     </div>
+    </section>
+
+    <!--Fourd Section (Gallery-Section)-->
+    <!--First-Project-->
+    <section id="Gallery">
+      <p class="section__text__p1">بیشتر ببینید در مورد </p>
+      <h1 class="title">گالری ما</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+      <div class="details-container color-container">
+
+  <div class="container-gallery">
+
+    <div class="gallery-pic">
+      <img src="2.JPEG"/>
+    </div>
+
+    <div class="gallery-pic">
+      <img src="25.jpg"/>
+    </div>
+
+    <div class="gallery-pic">
+      <img src="5.jpg"/>
+    </div>
+
+    <div class="gallery-pic">
+      <img src="6.JPEG"/>
+    </div>
+    
+    <div class="gallery-pic">
+      <img src="16.jpg"/>
+    </div>
+
+    <div class="gallery-pic">
+      <img src="7.JPEG"/>
+    </div>
+
+    <div class="gallery-pic">
+      <img src="8.JPEG"/>
+    </div>
+
+    <div class="gallery-pic">
+      <img src="24.jpg"/>
+    </div>
+    
+    <div class="gallery-pic">
+      <img src="10.JPEG"/>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+
+ <!--Fourth-Arrow-Icon-Bello-->
+ <img
+ src="./arrow.png"
+ alt="Arrow icon"
+ class="icon arrow"
+ onclick="location.href='#contact'"
+/>
+
+<!--Fourth-Arrow-Icon-Top-->
+<div class="arrow-Right">
+ <img
+  src="./arrow_right.png"
+  alt="Arrow icon"
+  class="icon arrow"
+  onclick="location.href='#Gallery'"
+/>
+    </section > 
+
+    <!--Fived Section (Contact-Section)-->
+    <section id="contact">
+      <p class="section__text__p1">به تماس شوید</p>
+      <h1 class="title">تماس با من</h1>
+      <div class="contact-info-upper-container">
+
+         <!--Email-->
+        <div class="contact-info-container">
+          <img
+            src="./email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">hasibullahnoori1379@gmail.com</a></p>
+        </div>
+
+        <!--LinkedIn-->
+        <div class="contact-info-container">
+          <img
+            src="./linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!--Sixed Section (Footer-Section)-->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#desktop">صفحه اصلی</a></li>
+            <li><a href="#about">در باره من</a></li>
+            <li><a href="#experience">تجربه کاری</a></li>
+            <li><a href="#projects">خدمات ما</a></li>
+            <li><a href="#Gallery">گالری</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>&#169; 2024 تمامی حقوق وب سایت متعلق به حسیب الله نوری میباشد.</p>
+    </footer>
+    <!--JavaScript Last Code-->
+    <script src="script.js"></script>
+  </body>
+</html>
